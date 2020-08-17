@@ -14,6 +14,7 @@ namespace CMS.Application
 
         static async Task Main(string[] args)
         {
+            Console.WriteLine("Entered Main()");
             Initialization();
 
             await students.Dump();
@@ -21,9 +22,8 @@ namespace CMS.Application
 
         private static void Initialization()
         {
-            students.Add(new Student(101, "Mark", "Smith", 1));
+            students.Add(new Student(101, "John", "Smith", 1));
             students.Add(new Student(102, "Robert", "Smith", 2));
-            students.Add(new Student(103, "Maria", "Rodriguez", 3));
         }
 
         private static void FinalizeMethodup()
